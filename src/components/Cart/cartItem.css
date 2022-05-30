@@ -1,0 +1,54 @@
+.card {
+  border: 3px solid orange;
+  margin: 3px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.price {
+  background-color: blue;
+  color: white;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.icons {
+  background-color: blue;
+  align-items: center;
+  padding: 10px;
+  width: 30%;
+  height: 30%;
+  color: white;
+  text-shadow: aquamarine;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.butt {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.imgSize {
+  height: 15%;
+  width: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .imgSize {
+    height: 50%;
+    width: 100%;
+  }
+
+  .card {
+    border: 3px solid orange;
+    margin: 3px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}

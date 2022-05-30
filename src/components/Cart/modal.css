@@ -1,0 +1,104 @@
+.modalBackground_open {
+  /* background-color: lightcoral; */
+  background-image: url('https://mcdn.wallpapersafari.com/medium/61/55/29iYnF.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  width: 60%;
+  position: fixed;
+  top: 100px;
+  left: 20%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  animation: pio 2s ease-in-out forwards;
+}
+
+input {
+  width: 100%;
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.red {
+  background-color: red;
+  border: 0;
+  color: azure;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.green {
+  background-color: blue;
+  border: 0;
+  color: greenyellow;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@keyframes pio {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  /* from {
+    transform: translateX(80px);
+    opacity: 0;
+  } */
+}
+
+@keyframes clo {
+  to {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  /* from {
+    transform: translateX(80px);
+    opacity: 0;
+  } */
+}
+
+@keyframes bump {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}

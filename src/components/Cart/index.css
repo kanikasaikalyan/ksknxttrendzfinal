@@ -1,0 +1,48 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.cart-img {
+  width: 150px;
+}
+
+.icons {
+  background-color: blue;
+  align-items: center;
+  padding: 10px;
+  width: 30%;
+  height: 30%;
+  color: white;
+  text-shadow: aquamarine;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.icons:hover {
+  animation: bump 1s linear;
+}
+
+@keyframes bump {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
